@@ -1,6 +1,12 @@
 from flask import Flask, request, jsonify, g
 import sqlite3
 
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app)  # Habilitar CORS para todas as rotas
+
+
 # Inicializando a aplicação Flask
 app = Flask(__name__)
 
